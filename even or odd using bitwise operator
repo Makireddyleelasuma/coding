@@ -1,0 +1,15 @@
+class Bit1
+{
+static boolean even(int n)
+{
+if((n^1)==n+1)
+return true;
+else
+return false;
+}
+public static void main(String args[])
+{
+int n=1;
+System.out.println(even(n)==true?"even":"odd");
+}
+}
