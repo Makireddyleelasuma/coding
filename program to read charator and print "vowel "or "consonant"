@@ -1,0 +1,44 @@
+import java.util.Scanner;
+class Ch
+{
+public static void main(String args[])
+{
+int i=0;
+Scanner sc=new Scanner(System.in);
+System.out.println("enter a charator");
+char ch=sc.next().charAt(0);
+switch(ch)
+{
+case'a':
+case'e':
+case'i':
+case'o':
+case'u':i++;
+}
+if(i==1)
+System.out.println("enter charator"+ch+"is vowel");
+else
+if((ch>='a'&&ch<='z')||ch>='a'&&ch<='z')
+System.out.println("enter a charator"+ch+"is constant");
+else
+System.out.println("not an alphabate");
+}
+}
+
+OUTPUT:
+D:\coding>javac Ch.java
+
+D:\coding>java Ch
+enter a charator
+b
+enter a charatorbis constant
+
+D:\coding>java Ch
+enter a charator
+s
+enter a charatorsis constant
+
+D:\coding>java Ch
+enter a charator
+a
+enter charatorais vowel
