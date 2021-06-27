@@ -1,0 +1,43 @@
+import java.util.Scanner;
+class Biggest
+{
+public static void main(String args[])
+{
+int a,b,c;
+Scanner sc=new Scanner(System.in);
+System.out.println("enter a number");
+a=sc.nextInt();
+System.out.println("enter b number");
+b=sc.nextInt();
+System.out.println("enter c number");
+c=sc.nextInt();
+if(a<b)
+{
+if(a>c)
+System.out.println("a is big");
+else
+System.out.println("c is big");
+}
+else
+{
+if(b>c)
+System.out.println("b is big");
+else
+System.out.println("c is big");
+}
+}
+}
+OUTPUT:
+D:\coding>java Biggest
+enter a number
+1
+enter b number
+2
+enter c number
+0
+a is big
+
+
+
+
+
