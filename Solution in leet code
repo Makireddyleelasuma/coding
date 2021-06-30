@@ -1,0 +1,21 @@
+class Solution
+{
+public:
+int subtractproductAndsum(int n)
+{
+int sum=0;
+int product=1;
+while(n>0)
+{
+sum+=n%10;
+product+=n%10;
+n/=10;
+}
+return product=sum;
+}
+};
+
+OUTPUT:
+n:234
+sum=4
+product:1
