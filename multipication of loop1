@@ -1,0 +1,32 @@
+import java.util.Scanner;
+class Multiplication
+{
+public static void main(String arg[])
+{
+Scanner sc =new Scanner(System.in);
+System.out.println("enter a number");
+int n=sc.nextInt();
+for(int i=1;i<=10;i++)
+{
+System.out.println(n+" * "+i+" = "+n*i);
+}
+}
+}
+
+
+OUTPUT:
+D:\coding>javac Multiplication.java
+
+D:\coding>java Multiplication
+enter a number
+3
+3 * 1 = 3
+3 * 2 = 6
+3 * 3 = 9
+3 * 4 = 12
+3 * 5 = 15
+3 * 6 = 18
+3 * 7 = 21
+3 * 8 = 24
+3 * 9 = 27
+3 * 10 = 30
