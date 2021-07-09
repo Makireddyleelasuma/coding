@@ -1,0 +1,24 @@
+import java.util.*;
+class GFG 
+{
+Scanner m=new Scanner(System.in);
+isAllPresent(String str)
+{   
+String regex = "^(?=.*[a-z])(?=." + "*[A-Z])(?=.*\\d)" + "(?=.*[-+_!@#$%^&*z?)
+Pattern p = Pattern.compile(regex);
+if (str == null) {
+System.out.println("No");
+return;
+}
+Matcher m = p.matcher(str);
+if (m.matches())
+System.out.println("Yes");
+else
+System.out.println("No");
+}
+public static void main(String args[])
+{
+String str = "#GeeksForGeeks123@";
+isAllPresent(str);
+}
+}
