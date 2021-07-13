@@ -1,0 +1,31 @@
+import java.util.*;
+class Factorial
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.println("emter a number");
+int num=sc.nextInt();
+System.out.println("factorial of enterd number");
+}
+static int fact(int n)
+{
+int output;
+if(n==1)
+{
+return 1;
+}
+output=fact(n-1)*n;
+return output;
+}
+}
+
+output:
+D:\coding>javac Factorial.java
+
+D:\coding>java Factorial
+emter a number
+23
+factorial of enterd number
+
+D:\coding>
