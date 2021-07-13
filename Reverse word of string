@@ -1,0 +1,25 @@
+import java.util.*;
+class Reverseword
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.print("Enter data:");
+String str=sc.nextLine();
+String ch[]=str.split(".0");
+for(int i=ch.length-1;i>=0;i--)
+{
+StringBuilder sb=new StringBuilder(ch[i]);
+System.out.print(sb.reverse());
+}
+}
+}
+/* hi.hello.why
+yhw.olleh.ih*/
+
+output:
+:\coding>javac  Reverseword.java
+
+D:\coding>java  Reverseword
+Enter data:i love passion
+noissap evol i
