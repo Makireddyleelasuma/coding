@@ -1,0 +1,20 @@
+import java.util.*;
+class Reversestring
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+System.out.print("Enter data:");
+String str=sc.nextLine();
+StringBuilder sb=new StringBuilder(str);
+System.out.print(sb.reverse());
+}
+}
+
+output:
+D:\coding>javac Reversestring.java
+
+D:\coding>java Reversestring
+Enter data:java is the best coding language
+egaugnal gnidoc tseb eht si avaj
+D:\coding>
