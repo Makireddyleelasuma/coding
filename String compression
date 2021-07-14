@@ -1,0 +1,41 @@
+class Solution {
+public:
+    int compress(vector<char>& chars) {
+        char end = ch[0];
+        int count = 1;
+        int start = 0;
+        for (int i=1;i<ch.length; i++) {
+            if (last == ch[i]) {
+                count++;
+            } else {
+                ch[start++] = end;
+                if (count > 1) {
+                    String temp = "";
+                    while (count > 0) {
+                        temp = count % 10 + temp;
+                        count /= 10;
+                    }
+                    for (int j=0; j<temp.length(); j++) {
+                        ch[start++] = temp.charAt(j);
+                    }
+                }
+                last = ch[i];
+                count = 1;
+            }
+        }        
+        ch[start++] = end;
+        String temp = "";
+        if (count > 1) {
+        while (count > 0) {
+            temp = count % 10 + temp;
+            count /= 10;
+        }
+        for (int i=0; i<temp.length(); i++) {
+            ch[start++] = temp.charAt(i);
+        }
+        }
+        return start;
+    }
+}
+    }
+}
