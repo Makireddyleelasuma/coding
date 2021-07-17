@@ -1,0 +1,22 @@
+// searching a value in given list
+import java.util.*;
+//Program on sublists
+class frame2
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int n;
+ArrayList<Integer> x1=new ArrayList<Integer>();
+x1.add(10); x1.add(20); x1.add(30); x1.add(40);
+x1.add(78);
+System.out.println("list is"+x1);
+System.out.println( x1.subList(1,4));
+}
+}
+output:
+D:\coding>javac  frame2.java
+
+D:\coding>java  frame2
+list is[10, 20, 30, 40, 78]
+[20, 30, 40]
