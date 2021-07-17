@@ -1,0 +1,24 @@
+import java.util.*;
+class frame4
+{
+public static void main(String args[])
+{
+Scanner sc=new Scanner(System.in);
+int n;
+ArrayList<Integer> x1=new ArrayList<Integer>();
+ArrayList<Integer> x2=new ArrayList<Integer>();
+x1.add(10); x1.add(20); x1.add(30);
+System.out.println("x1 data"+x1);
+x2= (ArrayList<Integer>) x1.clone(); //for duplicate creation
+System.out.println("x2 data"+x2);
+x1.add(70);
+System.out.println("x1 data"+x1);
+System.out.println("x2 data"+x2);
+}
+}
+output:
+D:\coding>java frame4
+x1 data[10, 20, 30]
+x2 data[10, 20, 30]
+x1 data[10, 20, 30, 70]
+x2 data[10, 20, 30]
