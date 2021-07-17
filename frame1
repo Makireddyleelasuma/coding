@@ -1,0 +1,33 @@
+import java.util.*;
+class frame1
+{
+public static void main(String args[])
+{
+ArrayList<Integer> a=new ArrayList<Integer>();
+a.add(10); //0
+a.add(25); //1
+a.add(72); //2
+a.add(70); //4
+System.out.println(a);
+a.add(3,999); //3
+a.set(0,777); //modify //[5678, 777, 25, 72, 999, 70]
+a.add(0,5678);
+System.out.println(a);
+a.remove(3);
+System.out.println(a);
+System.out.println("size of list is"+a.size());
+a.clear();
+System.out.println(a);
+System.out.println("size of list is"+a.size());
+}
+}
+output:
+D:\coding>javac  frame1.java
+
+D:\coding>java  frame1
+[10, 25, 72, 70]
+[5678, 777, 25, 72, 999, 70]
+[5678, 777, 25, 999, 70]
+size of list is5
+[]
+size of list is0
