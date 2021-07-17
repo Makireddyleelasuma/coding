@@ -1,0 +1,39 @@
+import java.util.*;
+public class set1{
+public static void main(String[] args) {
+
+HashSet<Integer> h1=new HashSet<Integer>();
+LinkedHashSet<Integer> h2=new LinkedHashSet<Integer>();
+TreeSet<Integer> t1=new TreeSet<Integer>();
+h1.add(10);
+h1.add(5);
+h1.add(12);
+h1.add(1100);
+h1.add(100);
+System.out.println("hashset"+h1);
+h2.add(10);
+h2.add(5);
+h2.add(12);
+h2.add(1100);
+h2.add(100);
+System.out.println("Linkedhashset"+h2);
+t1.add(10);
+t1.add(5);
+t1.add(12);
+t1.add(1100);
+t1.add(100);
+System.out.println("Treeset"+t1);
+}
+}
+output:
+D:\coding>javac set1.java
+
+D:\coding>java set1
+hashset[100, 5, 10, 12, 1100]
+Linkedhashset[10, 5, 12, 1100, 100]
+Treeset[5, 10, 12, 100, 1100]
+
+
+
+
+
