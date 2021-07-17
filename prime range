@@ -1,0 +1,40 @@
+import java.util.*;
+import java.math.*;
+public class Primerange {
+static int maxDifference(int start, int end)
+{
+int flag,count=0;
+for(int i=start;i<=end;i++)
+{
+flag=0;
+for(int j=1;j<=i;j++)
+{
+if(i%j==0)
+{
+flag++;
+}
+}
+if(flag==2)
+count++;//count=0
+}
+if(count>0)
+return Math.abs(start-end);
+else
+return 0;
+}
+public static void main(String[] args) {
+Scanner in = new Scanner(System.in);
+int q = in.nextInt();
+while(q-->0)
+{
+int a= in.nextInt();
+int b = in.nextInt();
+int result = maxDifference(a, b);
+System.out.println(result);
+}
+in.close();
+}
+}
+
+
+
