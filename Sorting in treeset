@@ -1,0 +1,30 @@
+import java.util.*;
+class Ma
+{
+static Map<String, Integer> map = new HashMap<String, Integer>();
+public static void sortbykey()
+{
+TreeMap<String, Integer> sorted=new TreeMap<String, Integer>(map);
+for (Map.Entry<String, Integer> entry :
+sorted.entrySet())
+System.out.println("Key = " + entry.getKey()  + ", Value = "  + entry.getValue());
+}
+public static void main(String args[])
+{
+map.put("Jayant", 80);
+map.put("Abhishek", 90);
+map.put("Anushka", 80);
+map.put("Amit", 75);
+map.put("Danish", 40);
+sortbykey();
+}
+}
+output:
+D:\coding>javac Ma.java
+
+D:\coding>java Ma
+Key = Abhishek, Value = 90
+Key = Amit, Value = 75
+Key = Anushka, Value = 80
+Key = Danish, Value = 40
+Key = Jayant, Value = 80
