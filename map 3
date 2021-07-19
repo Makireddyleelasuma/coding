@@ -1,0 +1,21 @@
+//maps -- dictionaries
+import java.util.*;
+class map3
+{
+public static void main(String args[])
+{
+HashMap<Integer,String> x=new HashMap<Integer,String>();
+x.put(101,"Tom");
+x.put(105,"Jerry");
+x.put(109,"Sam");
+System.out.println(x);
+System.out.println(x.get(105));
+x.remove(105);
+System.out.println(x);
+}
+}
+output:
+D:\coding>java map3
+{101=Tom, 105=Jerry, 109=Sam}
+Jerry
+{101=Tom, 109=Sam}
