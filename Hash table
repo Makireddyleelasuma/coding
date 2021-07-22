@@ -1,0 +1,32 @@
+import java.util.*;
+class  V 
+{
+public static void main(String args[])
+{
+Hashtable<Integer,Integer> x=new Hashtable<Integer,Integer>();
+x.put(101,500000);
+x.put(102,45000);
+x.put(103,35000);
+x.put(104,40000);
+x.put(103,45000);
+System.out.println(x.values());
+System.out.println(x);
+for (Map.Entry<Integer, Integer> i : x.entrySet())
+{
+System.out.println(i.getKey() + "---> " + i.getValue());
+}
+
+output:
+D:\coding>javac V.java
+
+D:\coding>java   V
+[40000, 45000, 45000, 500000]
+{104=40000, 103=45000, 102=45000, 101=500000}
+104---> 40000
+103---> 45000
+102---> 45000
+101---> 500000
+
+
+}
+}
